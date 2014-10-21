@@ -1,0 +1,13 @@
+# Twitter account info
+token = your_token
+token_key = your_token_key
+con_secret = your_consumer_secret
+con_secret_key = your_consumer_key
+
+# User info
+userName = user_name_that_recives_raspberry_tweets
+user_id = user_id_that_recives_raspberry_tweets
+
+# Weather info
+city_name = your_city
+city_id = your_city_id
