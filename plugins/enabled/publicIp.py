@@ -17,7 +17,7 @@ class PublicIp(IPlugin):
 
     def getPublicIp(self):
         p = subprocess.Popen(
-            ['curl', 'ifconfig.me', '&'], stdout=subprocess.PIPE)
+            ['curl', 'ifconfig.me'], stdout=subprocess.PIPE)
         ret = p.communicate()
         #print("My public IP is " + ret[0].decode('UTF-8'))
         self.pi.sendDirectMessage("My public IP is " + ret[0].decode('UTF-8'))
