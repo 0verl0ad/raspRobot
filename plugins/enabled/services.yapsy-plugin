@@ -1,0 +1,9 @@
+[Core]
+Name = Services
+Module = services
+
+[Documentation]
+Author = Aetsu
+Version = 0.1
+Website = http://blog.0verl0ad.com/
+Description = Enable/Disable/Status/Restart for any service

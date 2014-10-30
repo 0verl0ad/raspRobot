@@ -1,5 +1,5 @@
 from twitter import *
-
+import time
 
 class RaspTwitter:
 
@@ -9,11 +9,20 @@ class RaspTwitter:
 
     def __init__(self, param):
         self.conf = param.conf
-        self.t = Twitter(auth=OAuth(self.conf['token'],
+        self.connectTwitter()
+
+    def connectTwitter(self):
+        try:
+            self.t = Twitter(auth=OAuth(self.conf['token'],
                                     self.conf['token_key'],
                                     self.conf['con_secret'],
                                     self.conf['con_secret_key'])
-                         )
+                     )
+        except ValueError:
+            print("Problem with OAuth, wait 120s")
+            print(time.ctime())
+            time.sleep(120)
+            self.connectTwitter()
 
     def postTweet(self, msg):
         self.t.statuses.oembed(_id=1234567890)

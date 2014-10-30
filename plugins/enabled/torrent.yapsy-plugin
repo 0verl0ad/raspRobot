@@ -1,0 +1,9 @@
+[Core]
+Name = torrent
+Module = torrent
+
+[Documentation]
+Author = Aetsu
+Version = 0.1
+Website = http://blog.0verl0ad.com/
+Description = Download a torrent file

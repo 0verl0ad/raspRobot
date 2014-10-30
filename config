@@ -11,3 +11,7 @@ user_id = user_id_that_recives_raspberry_tweets
 # Weather info
 city_name = your_city
 city_id = your_city_id
+
+# Downloads
+torrentsDir = newTorrents_dir
+downloadsDir = downloads_dir
